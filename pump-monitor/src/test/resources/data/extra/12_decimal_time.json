@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "12_decimal_time",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 0.7, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 2.2, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 3.0, "pressure_mpa": 0, "rpm": 0, "valid": true}
+  ]
+}

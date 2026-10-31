@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "15_boolean_as_number",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 6, "rpm": true, "valid": true},
+    {"t_s": 1, "pressure_mpa": 6, "rpm": 100, "valid": true}
+  ]
+}

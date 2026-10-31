@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "13_gap_with_invalid_left",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 1, "pressure_mpa": 6, "rpm": 100, "valid": false},
+    {"t_s": 5, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 6, "pressure_mpa": 0, "rpm": 0, "valid": true}
+  ]
+}

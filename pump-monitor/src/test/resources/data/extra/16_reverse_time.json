@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "16_reverse_time",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 2, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 1, "pressure_mpa": 6, "rpm": 100, "valid": true}
+  ]
+}

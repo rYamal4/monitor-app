@@ -1,0 +1,6 @@
+{
+  "status": "format_error",
+  "category": "missing_field",
+  "path": "samples[0].rpm",
+  "message": "В samples[0] отсутствует rpm."
+}

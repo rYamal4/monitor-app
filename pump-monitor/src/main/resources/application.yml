@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: pump-monitor
+
+---
+# включается в bootRun, страница читается прямо из модуля web
+spring:
+  config:
+    activate:
+      on-profile: dev
+  web:
+    resources:
+      static-locations: file:../web/src/main/resources/static/
+      cache:
+        period: 0

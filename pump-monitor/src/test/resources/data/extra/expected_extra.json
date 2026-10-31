@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "duration_unit": "seconds",
+  "results": {
+    "11_exact_1_5_interval.json": {
+      "status": "ok",
+      "sample_count": 4,
+      "span_s": 4,
+      "working_s": 4,
+      "stopped_s": 0,
+      "gap_s": 0,
+      "invalid_s": 0,
+      "unknown_s": 0,
+      "modes_s": { "low": 0, "normal": 4, "high": 0 }
+    },
+    "12_decimal_time.json": {
+      "status": "ok",
+      "sample_count": 4,
+      "span_s": 3,
+      "working_s": 3,
+      "stopped_s": 0,
+      "gap_s": 0,
+      "invalid_s": 0,
+      "unknown_s": 0,
+      "modes_s": { "low": 0, "normal": 3, "high": 0 }
+    },
+    "13_gap_with_invalid_left.json": {
+      "status": "ok",
+      "sample_count": 4,
+      "span_s": 6,
+      "working_s": 2,
+      "stopped_s": 0,
+      "gap_s": 4,
+      "invalid_s": 0,
+      "unknown_s": 4,
+      "modes_s": { "low": 0, "normal": 2, "high": 0 }
+    },
+    "14_extra_fields.json": {
+      "status": "ok",
+      "sample_count": 3,
+      "span_s": 2,
+      "working_s": 2,
+      "stopped_s": 0,
+      "gap_s": 0,
+      "invalid_s": 0,
+      "unknown_s": 0,
+      "modes_s": { "low": 2, "normal": 0, "high": 0 }
+    },
+    "15_boolean_as_number.json": {
+      "status": "format_error",
+      "category": "wrong_type",
+      "path": "samples[0].rpm"
+    },
+    "16_reverse_time.json": {
+      "status": "format_error",
+      "category": "non_increasing_time",
+      "path": "samples[2].t_s"
+    },
+    "17_unsupported_version.json": {
+      "status": "format_error",
+      "category": "unsupported_version",
+      "path": "schema_version"
+    },
+    "18_version_as_number.json": {
+      "status": "format_error",
+      "category": "wrong_type",
+      "path": "schema_version"
+    },
+    "19_negative_time.json": {
+      "status": "format_error",
+      "category": "invalid_value",
+      "path": "samples[0].t_s"
+    },
+    "20_synthetic_false.json": {
+      "status": "format_error",
+      "category": "invalid_value",
+      "path": "synthetic"
+    },
+    "21_samples_not_array.json": {
+      "status": "format_error",
+      "category": "wrong_type",
+      "path": "samples"
+    },
+    "22_huge_number.json": {
+      "status": "format_error",
+      "category": "invalid_value",
+      "path": "samples[0].rpm"
+    },
+    "23_duplicate_key.json": {
+      "status": "format_error",
+      "category": "invalid_json"
+    }
+  }
+}

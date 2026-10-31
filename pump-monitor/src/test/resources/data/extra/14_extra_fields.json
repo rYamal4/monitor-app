@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "14_extra_fields",
+  "synthetic": true,
+  "comment": "лишнее поле",
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 2, "rpm": 80, "valid": true, "temperature_c": 40},
+    {"t_s": 1, "pressure_mpa": 2, "rpm": 80, "valid": true, "temperature_c": 41},
+    {"t_s": 2, "pressure_mpa": 0, "rpm": 0, "valid": true, "temperature_c": 41}
+  ]
+}

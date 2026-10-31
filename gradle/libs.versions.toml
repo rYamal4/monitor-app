@@ -1,0 +1,27 @@
+[versions]
+#https://kotlinlang.org/docs/gradle-configure-project.html#apply-the-plugin
+kotlin = "2.3.21" #та же версия, что использует Spring Boot
+#https://spring.io/projects/spring-boot#learn
+spring-boot = "4.1.1"
+#см. актуальную версию для текущей версии spring-boot
+spring-dependency-management = "1.1.7"
+#https://mvnrepository.com/artifact/com.tngtech.archunit/archunit-junit5
+archunit = "1.5.0"
+
+[libraries]
+#версии без version.ref берутся из spring-boot
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc" }
+tools-jackson-kotlin-v3 = { module = "tools.jackson.module:jackson-module-kotlin" }
+
+#тесты
+test-spring-boot-starter-webmvc = { module = "org.springframework.boot:spring-boot-starter-webmvc-test" }
+test-kotlin-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
+test-junit-platform = { module = "org.junit.platform:junit-platform-launcher" }
+test-archunit = { module = "com.tngtech.archunit:archunit-junit5", version.ref = "archunit" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

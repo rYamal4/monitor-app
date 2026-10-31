@@ -1,0 +1,6 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "21_samples_not_array",
+  "synthetic": true,
+  "samples": {"t_s": 0, "pressure_mpa": 6, "rpm": 100, "valid": true}
+}

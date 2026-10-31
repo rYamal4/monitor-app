@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контроль насоса</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="vendor/echarts.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Контроль насоса</h1>
+    <span class="muted">учебный прототип</span>
+  </header>
+
+  <main>
+    <div class="upload">
+      <label for="file-input">Файл записи (.json):</label>
+      <input type="file" id="file-input" accept=".json,application/json">
+      <span class="muted" id="file-name"></span>
+    </div>
+
+    <div class="error" id="error" role="alert" hidden></div>
+
+    <div id="result" hidden>
+      <h2 id="dataset-title"></h2>
+      <table class="totals">
+        <thead>
+          <tr><th>Показатель</th><th>Время</th><th class="number">Секунды</th></tr>
+        </thead>
+        <tbody id="totals-body"></tbody>
+      </table>
+
+      <h2>Графики</h2>
+      <div id="chart-block">
+        <div class="chart" id="chart"></div>
+        <ul class="legend" id="legend"></ul>
+      </div>
+      <p class="muted" id="chart-note" hidden></p>
+
+      <h2>Участки</h2>
+      <table class="segments">
+        <thead>
+          <tr><th class="number">Начало, с</th><th class="number">Конец, с</th><th>Длительность</th><th>Состояние</th></tr>
+        </thead>
+        <tbody id="segments-body"></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

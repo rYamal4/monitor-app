@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "23_duplicate_key",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "t_s": 1, "pressure_mpa": 6, "rpm": 100, "valid": true}
+  ]
+}

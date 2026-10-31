@@ -1,0 +1,171 @@
+/* цвета берёт и chart.js, поэтому все они здесь, в переменных */
+:root {
+  --background: #ffffff;
+  --header: #f2f2f2;
+  --text: #1f1f1f;
+  --text-muted: #6b6b6b;
+  --border: #cfcfcf;
+  --grid: #e6e6e6;
+  --axis: #b5b5b5;
+  --series-1: #2a78d6;
+  /* режимы: чем выше давление, тем темнее синий */
+  --state-low: #86b6ef;
+  --state-normal: #2a78d6;
+  --state-high: #104281;
+  --state-stopped: #898781;
+  --state-gap: #c3c2b7;
+  --state-invalid: #fab219;
+  --wash-gap: rgba(137, 135, 129, 0.16);
+  --wash-invalid: rgba(250, 178, 25, 0.22);
+  --error: #c62828;
+  --error-background: #fdecea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font: 14px/1.4 "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 20px;
+  background: var(--header);
+  border-bottom: 1px solid var(--border);
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 24px 0 8px;
+  font-size: 16px;
+}
+
+main {
+  max-width: 1200px;
+  padding: 16px 20px 40px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.upload {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.upload label {
+  font-weight: 600;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 10px 14px;
+  border: 1px solid var(--error);
+  background: var(--error-background);
+}
+
+.error h2 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--error);
+}
+
+.error p {
+  margin: 4px 0;
+}
+
+.error dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 2px 12px;
+  margin: 8px 0 0;
+}
+
+.error dt {
+  color: var(--text-muted);
+}
+
+.error dd {
+  margin: 0;
+}
+
+code {
+  font-family: Consolas, monospace;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px 16px 4px 0;
+  border-bottom: 1px solid var(--grid);
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  border-bottom-color: var(--border);
+}
+
+.number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+tr.sub td:first-child {
+  padding-left: 20px;
+  color: var(--text-muted);
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* под LAYOUT в chart.js */
+.chart {
+  width: 100%;
+  height: 600px;
+  border: 1px solid var(--border);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  header,
+  main {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  table {
+    width: 100%;
+  }
+}

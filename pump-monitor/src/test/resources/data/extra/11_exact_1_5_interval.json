@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "11_exact_1_5_interval",
+  "synthetic": true,
+  "samples": [
+    {"t_s": 0, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 1.5, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 3, "pressure_mpa": 6, "rpm": 100, "valid": true},
+    {"t_s": 4, "pressure_mpa": 0, "rpm": 0, "valid": true}
+  ]
+}
